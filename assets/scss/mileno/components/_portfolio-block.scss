@@ -1,0 +1,45 @@
+/*------------------------------------------------------
+[Portfolio Block]
+*/
+
+.portfolio-block {
+  background-color: $white;
+}
+
+.portfolio-block-footer {
+  padding: $card-spacer-y $card-spacer-x;
+  color: $card-cap-color;
+  background-color: $card-cap-bg;
+  border-top: 0;
+}
+
+.portfolio-block-media {
+  position: relative;
+  overflow: hidden!important;
+  border-radius: inherit;
+  height: $portfolio-block-media-height;
+
+  img {
+    display: block;
+    max-width: 100%;
+	height: auto;
+  }
+
+  &.portfolio-block-media-lg {
+    height: $portfolio-block-media-height-lg;
+  }
+
+  &.portfolio-block-media-xl {
+    height: $portfolio-block-media-height-xl;
+  }
+
+  &.portfolio-block-media-zoom > .overlay {
+    transition: all .3s ease-in-out;
+    transform-origin: center center;
+    will-change: transform;
+  }
+}
+
+.portfolio-block:hover > .portfolio-block-media-zoom > .overlay  {
+  transform: scale(1.1);
+}

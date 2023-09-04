@@ -1,0 +1,21 @@
+/*------------------------------------------------------
+[Countdown]
+*/
+
+.countdown {
+	display: inline-flex;
+}
+
+.countdown .number {
+  font-family: $countdown-number-font-family;
+  font-size: $countdown-number-font-size;
+  font-weight: $countdown-number-font-weight;
+  line-height: $countdown-number-line-height;
+}
+
+.countdown .title {
+  font-family: $countdown-title-font-family;
+  font-size: $countdown-title-font-size;
+  font-weight: $countdown-title-font-weight;
+  line-height: $countdown-title-line-height;
+}

@@ -1,0 +1,19 @@
+/*------------------------------------------------------
+[Reboot]
+*/
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.container, .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  padding: $section-padding-y 0;
+}

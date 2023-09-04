@@ -1,0 +1,63 @@
+//
+// Persio
+// Utilities - _background.scss
+//
+
+
+/* Base colors */
+.bg-black {background-color:#000 !important}
+
+@each $color, $value in $theme-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+/* Soft colors */
+@each $color, $value in $theme-colors {
+  @include bg-soft-variant(".bg-soft-#{$color}", $value);
+}
+
+/* Grays colors */
+@each $color, $value in $grays {
+  @include bg-grays-variant(".bg-gray-#{$color}", $value);
+}
+
+/* Background size */
+.bg-cover {background-size:cover}
+.bg-contain {background-size:contain}
+.bg-cover,.bg-contain {background-repeat:no-repeat;background-position:center}
+
+/* Background position */
+.bg-top-left {background-position:top left}
+.bg-top-center {background-position:top center}
+.bg-top-right {background-position:top right}
+.bg-center-left {background-position:center left}
+.bg-center {background-position:center}
+.bg-center-right {background-position:center right}
+.bg-bottom-left {background-position:bottom left}
+.bg-bottom-center {background-position:bottom center}
+.bg-bottom-right {background-position:bottom right}
+
+/* Background repeat */
+.bg-repeat {background-repeat:repeat}
+.bg-repeat-x {background-repeat:repeat-x}
+.bg-repeat-y {background-repeat:repeat-y}
+.bg-norepeat {background-repeat:no-repeat}
+
+/* Image object resize */
+.img-fit-cover {object-fit:cover}
+.img-fit-contain {object-fit:contain}
+.img-fit-scale-down {object-fit:scale-down}
+
+/* Image object position */
+.img-top-left {object-position:top left}
+.img-top-center {object-position:top center}
+.img-top-right {object-position:top right}
+.img-center-left {object-position:center left}
+.img-center {object-position:center}
+.img-center-right {object-position:center right}
+.img-bottom-left {object-position:bottom left}
+.img-bottom-center {object-position:bottom center}
+.img-bottom-right {object-position:bottom right}
+
+/* Filters */
+.filter-grayscale {filter:grayscale(1)}

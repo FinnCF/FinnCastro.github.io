@@ -1,0 +1,40 @@
+/*
+Theme Name: Mileno
+Description: Simple Coming Soon Template
+Author: Erilisdesign
+Theme URI: https://preview.erilisdesign.com/html/mileno
+Author URI: https://themeforest.net/user/erilisdesign
+Version: 1.1.1
+License: https://themeforest.net/licenses/standard
+
+SASS Stylesheet
+*/
+
+
+// Theme
+
+@import "components/reboot";
+@import "components/typography";
+@import "components/forms";
+@import "components/buttons";
+@import "components/nav";
+@import "components/navbar";
+@import "components/website-layout";
+@import "components/card";
+@import "components/pagination";
+@import "components/badge";
+@import "components/progress";
+@import "components/list-group";
+@import "components/list";
+@import "components/avatar";
+@import "components/divider";
+@import "components/loader";
+@import "components/icon";
+@import "components/countdown";
+@import "components/overlay";
+@import "components/portfolio-block";
+
+
+// Plugins
+
+@import "plugins/featherlight";
